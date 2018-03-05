@@ -1,7 +1,5 @@
 #include <iostream>
 #include "Player.h"
-#include "Weapon.h"
-#include "Grenade.h"
 
 
 int main(int argc, char* argv[]) {
@@ -9,6 +7,8 @@ int main(int argc, char* argv[]) {
 	Weapon w1, w2;
 	Grenade grenade;
 	Player player;
+
+	//Setting the weapon types, arbitrary at the moment
 
 	w1.setWeaponType(1);
 
@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
 
 	player.throwGrenade();
 
-
+	//Stop the window from instantly closing
 	getchar();
 	return 0;
 }

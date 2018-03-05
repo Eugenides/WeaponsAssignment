@@ -12,7 +12,7 @@ Grenade::~Grenade()
 {
 }
 
-
+//Self explanitory
 void Grenade::throwGrenade() {
-	printf("*throw* ... *BOOM!!!*");
+	printf("\n*throw* ... *BOOM!!!*");
 }
