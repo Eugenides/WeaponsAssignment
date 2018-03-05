@@ -8,9 +8,9 @@ public:
 	~Player();
 
 	//Self explanitory basic functionality
-	void equipWeapon(Weapon &weapon_, int slot);
+	void equipWeapon(Weapon* weapon_, int slot);
 
-	void equipGrenade(Grenade &grenade_);
+	void equipGrenade(Grenade* grenade_);
 
 	void shootWeapon(int slot);
 

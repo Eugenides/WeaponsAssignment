@@ -12,19 +12,19 @@ Player::~Player()
 }
 
 //Equip the weapon passed in the slot passed, if there is already a weapon there, print to screen that a weapon was replaced before replacing the old weapon with the new weapon
-void Player::equipWeapon(Weapon &weapon_, int slot) {
+void Player::equipWeapon(Weapon* weapon_, int slot) {
 	if (weaponsArray[slot] == nullptr) {
-		weaponsArray[slot] = &weapon_;
+		weaponsArray[slot] = weapon_;
 	}
 	else {
 		printf("\nYou have replaced the previous weapon in slot \d with a new one.", slot);
-		weaponsArray[slot] = &weapon_;
+		weaponsArray[slot] = weapon_;
 	}
 }
 
 //Equip the grenade type passed
-void Player::equipGrenade(Grenade &grenade_) {
-	grenade = &grenade_;
+void Player::equipGrenade(Grenade *grenade_) {
+	grenade = grenade_;
 }
 
 //If the player has a weapon, shoot it. If not, print that there is no weapon in the slot passed to the method
