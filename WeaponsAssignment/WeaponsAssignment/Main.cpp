@@ -3,16 +3,17 @@
 
 
 int main(int argc, char* argv[]) {
-	//Creating the player, weapons, and grenade
-	Weapon *w1 = new Weapon, *w2 = new Weapon;
-	Grenade *grenade = new Grenade;
+	//Creating the player, and grenade
+
 	Player *player = new Player;
 
-	//Setting the weapon types, arbitrary at the moment
+	Grenade *grenade = new Grenade;
 
-	w1->setWeaponType(1);
+	//Creating and setting the weapon types, arbitrary at the moment
 
-	w2->setWeaponType(2);
+	Rifle *w1 = new Rifle;
+
+	Grenade_Launcher *w2 = new Grenade_Launcher;
 
 	//Assign the weapons and grenade to the player
 

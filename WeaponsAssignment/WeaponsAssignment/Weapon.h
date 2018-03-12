@@ -1,3 +1,6 @@
+#ifndef WEAPON_H
+#define WEAPON_H
+
 class Weapon
 {
 public:
@@ -5,11 +8,10 @@ public:
 	~Weapon();
 
 	//Self explanitory basic functionality
-	void shootWeapon();
-	void setWeaponType(int num);
+	virtual void shootWeapon() = 0;
 
 private:
-	//Type of weapon
-	int weaponType;
 };
 
+
+#endif // !WEAPON_H

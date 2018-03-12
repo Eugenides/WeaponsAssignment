@@ -1,5 +1,7 @@
 #include "Weapon.h"
 #include "Grenade.h"
+#include "Grenade_Launcher.h"
+#include "Rifle.h"
 
 class Player
 {
